@@ -5,10 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/0-Main.unity
-    guid: a09cb257d566c489595b16ab37547666
   - enabled: 1
     path: Assets/HW18_AR_Test/HW18_AR_Test.unity
     guid: e03b46deb82cb314495798a695e1294f
+  - enabled: 1
+    path: Assets/EX_Interactions/EX_Interactions_Tap.unity
+    guid: e345a4fd24ad9364c9b7244823d048fb
+  - enabled: 1
+    path: Assets/EX_Interactions/EX_Interactions_Snap.unity
+    guid: 1c8c5f9c6ab65064dbd188d62ac96586
+  - enabled: 1
+    path: Assets/EX_Interactions/EX_Interactions_Lerp.unity
+    guid: cc1471b3af93de94ba081c5fdef3dace
+  - enabled: 1
+    path: Assets/EX_Interactions/EX_Interactions_Drag.unity
+    guid: 4239e8ef6d55b014ca6cf6ca04b458f7
   m_configObjects: {}
