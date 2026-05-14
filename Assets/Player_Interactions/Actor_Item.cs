@@ -12,8 +12,20 @@ public class Actor_Item : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    public void Act_SetState(GameObject sender)
+    {
+        PlayerManager.Instance.SetInteractionState(PlayerInteractionState.Item);
+        Debug.Log("Actor_SetState");
+    }
+
+    // public void Act_UnsetState(GameObject sender)
+    // {
+    //     PlayerManager.Instance.SetState(InteractionState.Idle);
+    //     Debug.Log("Actor_UnsetState");
+    // }
+
     // 아이템의 물리적 상태를 제어하는 최소 기능
-    public void SetPhysics(bool enable)
+    public void Act_SetPhysics(bool enable)
     {
         if (rb != null)
         {

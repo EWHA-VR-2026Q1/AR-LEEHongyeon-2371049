@@ -12,7 +12,7 @@ public class Trigger_LifeCycle : MonoBehaviour
     [Header("--------")]
 
     public GameObject InterfaceObject; // 인터페이스가 붙어있는 게임 오브젝트를 지정할 수 있도록 public으로 선언
-    IGeneral Interface;
+    IInteractable Interface;
     //public _WIP_Actor_Text TextActor;
 
     [Header("지연된 실행: 카운더")]
@@ -28,11 +28,11 @@ public class Trigger_LifeCycle : MonoBehaviour
     {
         if (InterfaceObject == null)
         {
-            Interface = GetComponent<IGeneral>();
+            Interface = GetComponent<IInteractable>();
         }
         else
         {
-            Interface = InterfaceObject.GetComponent<IGeneral>();
+            Interface = InterfaceObject.GetComponent<IInteractable>();
         }
     }
 
